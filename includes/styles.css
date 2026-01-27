@@ -26,6 +26,16 @@ body {
 		margin-right: 5px;
 	}
 	
+	nav a {
+		color: #fff;
+		text-decoration: none;
+		margin-left: 20px;
+	}
+
+	nav a:hover {
+		text-decoration: underline;
+	}
+	
 	.header-left {
 	  display: flex;
 	  align-items: center;
@@ -52,16 +62,6 @@ body {
 		font-size: 1.5vw;
 	}
 
-	nav a {
-	color: #fff;
-	text-decoration: none;
-	margin-left: 20px;
-	}
-
-	nav a:hover {
-	text-decoration: underline;
-	}
-	
 	.search-bar {
 		margin-left: 20px;
 	}
@@ -77,6 +77,22 @@ body {
 	
 	.search-button{
 		font-size: 5vw;
+	}
+	
+	.search-icon{
+		background: none;
+		border: none;
+		color: white;
+		font-size: 5vw;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 4px 6px;
+		border-radius: 50px;
+	}
+	
+	.search-icon:focus {
+	  background: #5f6742;
 	}
 	
 	/* Hide Mobile header on Desktop by default */
@@ -128,25 +144,38 @@ body {
 
 	/* The navigation menu links */
 	.sidenav a {
-	  padding: 8px 8px 8px 32px;
-	  text-decoration: none;
-	  font-size: 25px;
-	  color: white;
-	  display: block;
-	  transition: 0.3s;
+		padding: 8px 8px 8px 32px;
+		text-decoration: none;
+		font-size: 25px;
+		color: white;
+		display: block;
+		transition: 0.3s;
 	}
 
-	.sidenav a:hover {
-	  color: white; /*change this*/
+	.sidenav a:focus {
+	  background: #5f6742;
 	}
 
 	/* Position and style the close button (top right corner) */
 	.sidenav .closebtn {
-	  position: absolute;
-	  top: 0;
-	  right: 25px;
-	  font-size: 36px;
-	  margin-left: 50px;
+		position: absolute;
+		top: 0;
+		right: 25px;
+		font-size: 36px;
+	}
+	
+	.closebtn:focus{
+		background: #5f6742;
+	}
+	
+	.logo-nav {
+		display: flex;
+		justify-content: center;
+		padding: 10px;
+	}
+	
+	.logo-nav img {
+		width: 20vw;
 	}
 
 	@media screen and (max-height: 450px) {
