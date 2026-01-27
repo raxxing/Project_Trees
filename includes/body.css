@@ -1,0 +1,12 @@
+/* BODY STYLES */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Lucida Fax", "Lucida Bright", serif;
+}
+
+body {
+	background: #EEE9BF;
+	color: #222;
+}

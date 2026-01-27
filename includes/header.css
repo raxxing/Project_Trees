@@ -1,0 +1,87 @@
+/* HEADER STYLES */
+header {
+    background: #79864B;
+    color: #fff;
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 5vw;
+    margin-right: 5px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.header-title {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    line-height: 1.1;
+}
+
+.title-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+}
+
+.layer {
+    font-size: 1.5vw;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.search-bar {
+    margin-left: 20px;
+}
+
+.search-bar input {
+    width: 100%;
+    max-width: 400px;
+    padding: 6px 25px;
+    border-radius: 20px;
+    border: none;
+    font-size: 14px;
+}
+
+.search-button{
+    font-size: 5vw;
+}
+
+/* Hide Mobile header on Desktop by default */
+.mobile-header { display: none; }
+
+/* Header for mobile devices*/
+@media (max-width: 767px) {
+    .desktop-header { display: none; }
+    .mobile-header { display: block; }
+    
+    /* resizing for mobile */
+    .logo img {
+        width: 12vw;
+    }
+    
+    .layer {
+        font-size: 3vw;
+    }
+}
