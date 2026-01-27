@@ -6,7 +6,7 @@
 		<h1 class='header-title'>
 		
 			<div class="logo">
-			  <img src="../assets/logo.png" alt="Trees In The Neigborhood">
+			  <img src="../assets/logo.png" alt="Roots & Streets">
 			</div>
 			
 			<div class="title-text">
@@ -49,10 +49,11 @@
 			<a href="#">Register</a>
 		</div>
 		
-		<div class='header-title'>	
+		<div class="header-title" id="headerTitle">	
 			<span style='font-size: 30px; margin-right:5px;' onclick="openNav()"><i class="bi bi-list"></i></span>
+			
 			<div class="logo">
-			  <img src="../assets/logo.png" alt="Trees In The Neigborhood">
+			  <img src="../assets/logo.png" alt="Roots & Trees">
 			</div>
 			
 			<div class="title-text">
@@ -63,6 +64,13 @@
 	</div>
 	
 	<div class="header-right">
-		<button class='search-icon'><i class="bi bi-search"></i></button>
+		<button class="search-icon" type="button" onclick="toggleSearch()">
+			<i class="bi bi-search"></i>
+		</button>
+	</div>
+
+	<!-- hidden search -->
+	<div class="header-search" id="headerSearch">
+	<input type="text" placeholder="Search trees, posts...">
 	</div>
 </header>

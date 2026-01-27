@@ -8,3 +8,10 @@ function openNav() {
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
+function toggleSearch() {
+  const title = document.getElementById("headerTitle");
+  const search = document.getElementById("headerSearch");
+
+  title.classList.toggle("hidden");
+  search.classList.toggle("active");
+}

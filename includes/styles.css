@@ -96,6 +96,28 @@ body {
 	  background: #5f6742;
 	}
 
+	/* MOBILE SEARCH BAR */
+	.header-search {
+		display: none;
+		flex: 1;
+	}
+
+	.header-search input {
+		width: 100%;
+		padding: 6px 12px;
+		border-radius: 20px;
+		border: none;
+	}
+
+	/* active state */
+	.header-search.active {
+		display: block;
+	}
+
+	.header-title.hidden {
+		display: none;
+	}
+
 /* CONTENT STYLES */
 
 	.content-container {
