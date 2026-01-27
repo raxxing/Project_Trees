@@ -7,8 +7,9 @@
 
 body {
 	background: #EEE9BF;
-	color: #222;
+	color: #76753f;	
 }
+
 
 /* HEADER STYLES */
 	
@@ -94,24 +95,6 @@ body {
 	.search-icon:focus {
 	  background: #5f6742;
 	}
-	
-	/* Hide Mobile header on Desktop by default */
-	.mobile-header { display: none; }
-
-	/* Header for mobile devices*/
-	@media (max-width: 767px) {
-		.desktop-header { display: none; }
-		.mobile-header { display: flex; }
-		
-		/* resizing for mobile */
-		.logo img {
-			width: 12vw;
-		}
-		
-		.layer {
-			font-size: 3vw;
-		}
-	}
 
 /* CONTENT STYLES */
 
@@ -125,7 +108,7 @@ body {
 		text-align: center;
 		font-size: 0.8vw;
 		padding: 10px;
-		color: #666;
+		color: #76753f;
 	}
 	
 /* SIDE NAVIGATION */
@@ -146,7 +129,7 @@ body {
 	.sidenav a {
 		padding: 8px 8px 8px 32px;
 		text-decoration: none;
-		font-size: 25px;
+		font-size: 20px;
 		color: white;
 		display: block;
 		transition: 0.3s;
@@ -181,4 +164,18 @@ body {
 	@media screen and (max-height: 450px) {
 	  .sidenav {padding-top: 15px;}
 	  .sidenav a {font-size: 18px;}
+	}
+	
+	/* Hide Mobile header on Desktop by default */
+	.mobile-header { display: none; }
+
+	/* Header for mobile devices*/
+	@media (max-width: 767px) {
+		.desktop-header { display: none; }
+		.mobile-header { display: flex; }
+		
+		/* resizing for mobile */
+		.logo img {width: 12vw;}
+		.layer {font-size: 3vw;}
+		footer{font-size: 3vw;}
 	}
