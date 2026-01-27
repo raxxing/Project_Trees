@@ -87,7 +87,7 @@ body {
 	/* Header for mobile devices*/
 	@media (max-width: 767px) {
 		.desktop-header { display: none; }
-		.mobile-header { display: block; }
+		.mobile-header { display: flex; }
 		
 		/* resizing for mobile */
 		.logo img {
