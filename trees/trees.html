@@ -19,16 +19,16 @@
 <p>Insert content here.</p>
 
 <script>
-fetch('../includes/header.html')
-    .then(response => response.text())
-    .then(data => document.getElementById('header-placeholder').innerHTML = data);
+	fetch('../includes/header.html')
+		.then(response => response.text())
+		.then(data => document.getElementById('header-placeholder').innerHTML = data);
 
-	function openNav() {
-	  document.getElementById("mySidenav").style.width = "250px";
-	}
-	function closeNav() {
-	  document.getElementById("mySidenav").style.width = "0";
-	}
+		function openNav() {
+		document.getElementById("mySidenav").style.width = "250px";
+		}
+		function closeNav() {
+		document.getElementById("mySidenav").style.width = "0";
+		}
 </script>
 
 <footer>Roots & Streets © 2026</footer>
