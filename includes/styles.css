@@ -20,15 +20,15 @@ body {
 		align-items: center;
 		justify-content: space-between;
 	}
-	
+
 	.logo img {
 		width: 5vw;
 		margin-right: 5px;
 	}
 	
 	.header-left {
-		display: flex;
-		align-items: center;
+	  display: flex;
+	  align-items: center;
 	}
 	
 	.header-right {
@@ -38,10 +38,8 @@ body {
 	}
 
 	.header-title {
-		display: flex;
-		align-items: center;
-		font-weight: bold;
-		line-height: 1.1;
+	  display: flex;
+	  align-items: center;
 	}
 	
 	.title-text {
