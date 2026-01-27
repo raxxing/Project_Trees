@@ -6,6 +6,18 @@
     <title>Trees</title>
 </head>
 <body>
-    <h1>Trees</h1>
+
+<!-- Header placeholder -->
+<div id="header-placeholder"></div>
+
+<h1>Trees</h1>
+<p>Insert content here.</p>
+
+<script>
+fetch('../includes/header.html')
+    .then(response => response.text())
+    .then(data => document.getElementById('header-placeholder').innerHTML = data);
+</script>
+
 </body>
 </html>
