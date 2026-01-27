@@ -8,10 +8,13 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="assets/logo_16x16.png">
 	
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="includes/style.css">
 </head>
 <body>
-<header>
+
+<!-- DESKTOP HEADER -->
+
+<header class="desktop-header">
 	<div class="header-left">
 	
 		<h1 class='header-title'>
@@ -42,9 +45,49 @@
 	</div>
 </header>
 
+<!-- MOBILE HEADER -->
+
+<header class="mobile-header">
+	<div class="header-left">
+		<div id="mySidenav" class="sidenav">
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		  <a href="#">Home</a>
+		  <a href="#">Trees</a>
+		  <a href="#">Regions</a>
+		  <a href="#">About</a>
+		</div>
+		
+		<h1 class='header-title'>	
+			<span style='margin-right:5px;' onclick="openNav()"><i class="bi bi-list"></i></span>
+			<div class="logo">
+			  <img src="assets/logo.png" alt="Trees In The Neigborhood">
+			</div>
+			
+			<div class="title-text">
+				<span class='layer'>Trees</span>
+				<span class='layer'>In The</span>	
+				<span class='layer'>Neighborhood</span>
+			</div>
+		</h1>
+	</div>
+	
+	<div class="header-right">
+		<span>Search</span>
+	</div>
+</header>
+
 <div class="content-container">
 	<span style='font-style: italic;'>Insert content here</span>
 </div>
+
+<script>
+	function openNav() {
+	  document.getElementById("mySidenav").style.width = "250px";
+	}
+	function closeNav() {
+	  document.getElementById("mySidenav").style.width = "0";
+	}
+</script>
 
 <footer>Trees In The Neighborhood © 2026</footer>
 </body>
